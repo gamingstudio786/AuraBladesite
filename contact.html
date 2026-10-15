@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Aura Blade</title>
+<meta name="description" content="Contact Aura Blade for support, feedback, privacy requests or business enquiries: contact@aurablade.site.">
+<link rel="canonical" href="https://aurablade.site/contact.html">
+<meta name="theme-color" content="#EDF3F0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aura Blade">
+<meta property="og:title" content="Contact | Aura Blade">
+<meta property="og:description" content="Contact Aura Blade for support, feedback, privacy requests or business enquiries: contact@aurablade.site.">
+<meta property="og:url" content="https://aurablade.site/contact.html">
+<meta property="og:image" content="https://play-lh.googleusercontent.com/YA3AGImGQpWLoNMKx7_lHQNt-DcPIYpZw3rzNvae04AMjooqSp6Bhu_aZiIA8ieFa9nM9GfTilhe_H59thjRZAc=w240-h480">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..600,100&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D5E6E1"/><circle cx="20" cy="20" r="12" fill="none" stroke="#8DBBB0" stroke-width="2"/><path d="M13 27 27 13" stroke="#274A4F" stroke-width="3.2" stroke-linecap="round"/><circle cx="27" cy="13" r="2.6" fill="#5F7FA3"/></svg>Aura Blade</a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="games.html">Games</a><a href="privacy.html">Privacy Policy</a><a href="contact.html" aria-current="page">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+<h1>Get in touch</h1>
+<p class="lead">Bug reports, feedback, privacy requests or business questions. We read every message.</p>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap contact-grid">
+<div class="panel">
+<h2 style="font-size:26px">Send us a message</h2>
+<form id="contact-form">
+<label for="topic">What is this about?</label>
+<select id="topic" name="topic">
+<option>Bug report</option>
+<option>Feedback or idea</option>
+<option>Privacy or data request</option>
+<option>Business enquiry</option>
+<option>Something else</option>
+</select>
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" autocomplete="name">
+<label for="message">Message</label>
+<textarea id="message" name="message" required></textarea>
+<p class="hint">For bugs, mention your phone model and Android version.</p>
+<button class="btn primary" type="submit">Open in my email app</button>
+</form>
+<p class="hint" style="margin:16px 0 0">This form prepares an email in your own mail app. Nothing is sent until you press send there.</p>
+</div>
+
+<div class="details">
+<dl>
+<dt>Email</dt>
+<dd><a href="mailto:contact@aurablade.site">contact@aurablade.site</a><br>Support and privacy requests both go here.</dd>
+<dt>Studio</dt>
+<dd><address>Aura Blade<br>House No 11, Khan Street,<br>Model Town Link Road<br>Lahore 54000, Pakistan</address></dd>
+<dt>Our game</dt>
+<dd><a href="games.html">Police Officer Border Sim Game</a></dd>
+<dt>Privacy</dt>
+<dd>Read the <a href="privacy.html">privacy policy</a> or email us to ask about your data.</dd>
+</dl>
+</div>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap foot">
+<div>&copy; 2026 Aura Blade. All rights reserved.</div>
+<nav aria-label="Footer"><a href="games.html">Games</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a><a href="mailto:contact@aurablade.site">contact@aurablade.site</a></nav>
+</div></footer>
+<script>
+document.getElementById("contact-form").addEventListener("submit",function(e){
+  e.preventDefault();
+  var f=e.target,topic=f.topic.value,name=f.name.value.trim(),msg=f.message.value.trim();
+  var body=msg+(name?"\n\n"+name:"");
+  location.href="mailto:contact@aurablade.site?subject="+encodeURIComponent("[Aura Blade] "+topic)+"&body="+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
